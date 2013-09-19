@@ -1,0 +1,18 @@
+{
+    "name": "DW-Persian",
+    "description": "Access DW from countries that block it or from behind a corporate Firewall",
+    "author": "Milaad",
+
+    "unblocker_rules": {
+      "DW-Persian": {
+        "description": "Unblock DW-Persian",
+        "link": "www.dw.de",
+        "root_url": ["**.dw.de/"],
+        "cmds": [{
+          "hosts": ["dw.de"],
+          "dst_dns": "true",
+          "then": "PROXY US"
+        }]
+      }
+    }
+  }
